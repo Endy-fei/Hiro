@@ -1,0 +1,18 @@
+@import "normalize.css";
+
+/*导入src/assets/font/DingTalk JinBuTi.ttf字体*/
+@font-face {
+  font-family: "DingTalk JinBuTi";
+  src: url("@/assets/font/DingTalk JinBuTi.ttf");
+}
+/*src/assets/font/DingTalk Sans.ttf*/
+@font-face {
+  font-family: "DingTalk Sans";
+  src: url("@/assets/font/DingTalk Sans.ttf");
+}
+/*应用到全局*/
+* {
+  font-family: "DingTalk JinBuTi", "DingTalk Sans", "Microsoft YaHei", "Helvetica Neue",
+    Helvetica, Arial, sans-serif;
+}
+
