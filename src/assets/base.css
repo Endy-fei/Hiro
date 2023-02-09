@@ -2,17 +2,81 @@
 
 /*导入src/assets/font/DingTalk JinBuTi.ttf字体*/
 @font-face {
-  font-family: "DingTalk JinBuTi";
-  src: url("@/assets/font/DingTalk JinBuTi.ttf");
-}
-/*src/assets/font/DingTalk Sans.ttf*/
-@font-face {
-  font-family: "DingTalk Sans";
-  src: url("@/assets/font/DingTalk Sans.ttf");
-}
-/*应用到全局*/
-* {
-  font-family: "DingTalk JinBuTi", "DingTalk Sans", "Microsoft YaHei", "Helvetica Neue",
-    Helvetica, Arial, sans-serif;
+    font-family: "DingTalk JinBuTi";
+    src: url("@/assets/font/DingTalk JinBuTi.ttf");
 }
 
+/*src/assets/font/DingTalk Sans.ttf*/
+@font-face {
+    font-family: "DingTalk Sans";
+    src: url("@/assets/font/DingTalk Sans.ttf");
+}
+
+/*应用到全局*/
+* {
+    font-family: "DingTalk JinBuTi", "DingTalk Sans", "Microsoft YaHei", "Helvetica Neue",
+    Helvetica, Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+
+
+a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, output, p, pre, q, ruby, s, samp, section, small, span, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video {
+    padding: 0;
+    margin: 0;
+    /*!*font: inherit;*!*/
+    font-size: 100%;
+    vertical-align: baseline;
+    border: 0
+}
+
+/*html {*/
+/*    overflow-y: scroll;*/
+/*    -webkit-overflow-scrolling: touch;*/
+/*    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);*/
+/*    -webkit-touch-callout: none;*/
+/*    -webkit-user-select: none;*/
+/*    -webkit-text-size-adjust: 100%*/
+/*}*/
+
+/*input {*/
+/*    -webkit-appearance: none;*/
+/*    border-radius: unset;*/
+/*    outline: 0*/
+/*}*/
+
+/*input:-webkit-autofill {*/
+/*    -webkit-box-shadow: 0 0 0 100px #fff inset*/
+/*}*/
+
+/*textarea {*/
+/*    -webkit-appearance: none*/
+/*}*/
+
+/*@font-face {*/
+/*    font-family: AkrobaFont;*/
+/*    font-style: normal;*/
+/*    font-weight: 400;*/
+/*    src: url(../fonts/Akrobatextrabold.3b9d54f0.ttf)*/
+/*}*/
+
+/*@font-face {*/
+/*    font-family: NexaBold;*/
+/*    font-style: normal;*/
+/*    font-weight: 400;*/
+/*    src: url(../fonts/NexaBold.c9f309b3.otf)*/
+/*}*/
+
+/*@font-face {*/
+/*    font-family: IBMPlexSansBold;*/
+/*    font-style: normal;*/
+/*    font-weight: 400;*/
+/*    src: url(../fonts/IBMPlexSansBold.d1b68d73.otf)*/
+/*}*/
+
+/*@font-face {*/
+/*    font-family: SFCompactTextSemibold;*/
+/*    font-style: normal;*/
+/*    font-weight: 400;*/
+/*    src: url(../fonts/SFCompactTextSemibold.de870218.otf)*/
+/*}*/
