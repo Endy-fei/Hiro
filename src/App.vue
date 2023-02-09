@@ -1,6 +1,7 @@
 <script setup>
 import {RouterView} from 'vue-router'
-import HiroLogo from './components/HiroLogo.vue'</script>
+import HiroLogo from './components/HiroLogo.vue'
+</script>
 
 <template>
   <header>

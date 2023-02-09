@@ -1,7 +1,15 @@
 <template>
   <div class="home lazy-animate-init">
     <div class="carousel-wrap">
-      <div class="swiper-container banner-container swiper-container-initialized swiper-container-horizontal"></div>
+      <div class="swiper-container banner-container swiper-container-initialized swiper-container-horizontal">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide carousel-img swiper-slide-duplicate swiper-slide-next swiper-slide-duplicate-prev"></div>
+          <div class="swiper-slide carousel-img swiper-slide-duplicate-active"></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
       <div class="carousel-preview"></div>
     </div>
   </div>
