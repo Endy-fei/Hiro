@@ -30,28 +30,29 @@ a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, bo
     border: 0
 }
 
-/*html {*/
-/*    overflow-y: scroll;*/
-/*    -webkit-overflow-scrolling: touch;*/
-/*    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);*/
-/*    -webkit-touch-callout: none;*/
-/*    -webkit-user-select: none;*/
-/*    -webkit-text-size-adjust: 100%*/
-/*}*/
+html {
+    overflow-y: scroll;
+    /*overflow-x: hidden;*/
+    -webkit-overflow-scrolling: touch;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -webkit-text-size-adjust: 100%
+}
 
-/*input {*/
-/*    -webkit-appearance: none;*/
-/*    border-radius: unset;*/
-/*    outline: 0*/
-/*}*/
+input {
+    -webkit-appearance: none;
+    border-radius: unset;
+    outline: 0
+}
 
-/*input:-webkit-autofill {*/
-/*    -webkit-box-shadow: 0 0 0 100px #fff inset*/
-/*}*/
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 100px #fff inset
+}
 
-/*textarea {*/
-/*    -webkit-appearance: none*/
-/*}*/
+textarea {
+    -webkit-appearance: none
+}
 
 /*@font-face {*/
 /*    font-family: AkrobaFont;*/
