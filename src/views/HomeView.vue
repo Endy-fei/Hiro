@@ -23,10 +23,10 @@
           </div>
         </div>
         <div class="carousel-btn">
-          <p class="swiper-left" @mouseover="showBeforePreviewImg" @mouseleave="hidePreviewImg">
+          <p class="swiper-left" @mouseover="showBeforePreviewImg" @mouseleave="hidePreviewImg" @click="prevSlide">
             <img src="@/assets/images/utils/arrow-right.png">
           </p>
-          <p class="swiper-right" @mouseover="showAfterPreviewImg" @mouseleave="hidePreviewImg">
+          <p class="swiper-right" @mouseover="showAfterPreviewImg" @mouseleave="hidePreviewImg" @click="nextSlide">
             <img src="@/assets/images/utils/arrow-right.png">
           </p>
         </div>
@@ -47,6 +47,7 @@ import p1 from '@/assets/images/1/1-1.png';
 import p2 from '@/assets/images/1/1-2.png';
 import p3 from '@/assets/images/1/1-3.png';
 import {A11y, Navigation, Pagination, Scrollbar, Autoplay} from "swiper";
+import { useSwiper } from 'swiper/vue';
 
 const picList = [p1, p2, p3]
 
@@ -56,11 +57,23 @@ const previewOpacity = ref(0)
 
 let isAfter = true;
 
-const modules = [Navigation, Pagination, Scrollbar, A11y, Autoplay]
+let swiperRealIndex = 0;
+
+let swiperU = null;
+
+
+onMounted(() => {
+   swiperU = useSwiper();
+})
+
+
+const modules = [Navigation, Pagination, Scrollbar, A11y, Autoplay];
+
 const onSwiper = (swiper) => {
   console.log('swiper');
 };
 const onSlideChange = (swiper) => {
+  swiperRealIndex = swiper.realIndex;
   if (isAfter) {
     if (swiper.realIndex === 2) {
       previewImg.value = picList[0]
@@ -77,22 +90,36 @@ const onSlideChange = (swiper) => {
 };
 
 const showBeforePreviewImg = () => {
-  // if (swiperRealIndex === 0) {
-  //   previewImg.value = picList[2]
-  // } else {
-  //   previewImg.value = picList[swiperRealIndex - 1]
-  // }
+  if (swiperRealIndex === 0) {
+    previewImg.value = picList[2]
+  } else {
+    previewImg.value = picList[swiperRealIndex - 1]
+  }
   previewOpacity.value = 1;
   isAfter = false;
 }
 
 const showAfterPreviewImg = () => {
+
+  if (swiperRealIndex === 2) {
+    previewImg.value = picList[0]
+  } else {
+    previewImg.value = picList[swiperRealIndex + 1]
+  }
   previewOpacity.value = 1;
   isAfter = true;
 }
 
 const hidePreviewImg = () => {
   previewOpacity.value = 0
+}
+
+const nextSlide = () => {
+  swiperU.slideNext();
+}
+
+const prevSlide = () => {
+  swiperU.slidePrev();
 }
 
 
