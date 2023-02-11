@@ -1,10 +1,12 @@
 <template>
   <div class="home lazy-animate-init">
     <MainSwiper/>
+    <ProductSwiper/>
   </div>
 </template>
 <script setup>
 import MainSwiper from '@/views/home_components/MainSwiper.vue'
+import ProductSwiper from "@/views/home_components/ProductSwiper.vue";
 </script>
 <style scoped>
 .home {
