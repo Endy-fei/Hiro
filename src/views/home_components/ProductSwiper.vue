@@ -1,17 +1,6 @@
 <template>
   <div class="new-product-wrap lazy-animate-init lazy-animate-run">
-    <div class="line-wrap">
-      <div class="line"></div>
-      <div class="line-content">
-        <p class="title">最新产品</p>
-        <p>关注音乐 关注科技</p>
-        <div class="circle">
-          <p></p>
-          <p></p>
-        </div>
-      </div>
-      <div class="line-right"></div>
-    </div>
+    <LineWrap title="最新产品" content="关注音乐 关注科技"/>
     <div class="swiper-my-pagination"></div>
     <div class="product-carousel-wrap">
       <div style="display: flex">
@@ -20,7 +9,6 @@
                 :autoplay="autoplay"
                 :pagination="pagination" :scrollbar="false" :loop="true" @swiper="onSwiper"
                 @slideChange="onSlideChange">
-
           <swiper-slide class="carousel-img" slide-1>
             <img src="@/assets/images/2/2-123.png" alt="2-123">
           </swiper-slide>
@@ -53,6 +41,7 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 import {onMounted} from "vue";
+import LineWrap from "@/components/LineWrap.vue";
 
 const modules = [Navigation, Pagination, Scrollbar, A11y, Autoplay];
 
@@ -72,21 +61,41 @@ const pagination = {
   clickable: true,
   type: 'custom',
   renderCustom: function (swiper, current, total) {
+    const style = 'width: auto;\n' +
+        '    height: auto;\n' +
+        '    border-radius: 0;\n' +
+        '    background: transparent;\n' +
+        '    color: #45454d;\n' +
+        '    font-size: 16px;\n' +
+        '    opacity: 1;\n' +
+        '    margin: 0 12px;\n' +
+        '    cursor: pointer;\n';
+    const activeStyle = 'background: none;\n' +
+        '    font-weight: 600;\n' +
+        '    color: #000;\n' +
+        '    width: auto;\n' +
+        '    height: auto;\n' +
+        '    border-radius: 0;\n' +
+        '    font-size: 16px;\n' +
+        '    opacity: 1;\n' +
+        '    margin: 0 12px;\n' +
+        '    cursor: pointer;';
+
     let paginationHtml = '';
     const text = ['调音台', '音响', '服务器', '软件支持', '直播服务']
     for (let i = 1; i <= total; i++) {
       if (i === current) {
         // language=HTML format=true
-        paginationHtml += `
-          <div class='pagination pagination_active'>
-            <span class='pagination_text'>${text[i - 1]}</span>
-          </div>`
+        paginationHtml += `<span
+            style="${activeStyle}">${text[i - 1]}</span>`
       } else {
         // language=HTML format=true
-        paginationHtml += `
-          <div class='pagination'>
-            <span class='pagination_text'>${text[i - 1]}</span>
-          </div>`
+        paginationHtml += `<span
+            style="${style}">${text[i - 1]}</span>`
+      }
+      //  加一个分割线
+      if (i !== total) {
+        paginationHtml += `<span style="width: 1px;height: 12px;background-color: #939393;display: inline-block;margin: 0 12px;"></span>`
       }
     }
     return paginationHtml
@@ -116,64 +125,6 @@ const onSlideChange = (s) => {
   padding: 90px 0 20px;
 }
 
-.line-wrap {
-  width: 1152px;
-  margin: 0 auto;
-  position: relative;
-}
-
-.line-wrap .line {
-  left: 0;
-}
-
-.line-wrap .line-right, .line-wrap .line {
-  position: absolute;
-  top: 45px;
-  width: 384px;
-  height: 1px;
-  background-color: #ebebeb;
-  display: inline-block;
-}
-
-.line-wrap .line-right {
-  right: 0;
-}
-
-.line-wrap .line-content {
-  display: inline-block;
-  vertical-align: middle;
-  padding: 10px 89px 0;
-}
-
-.line-wrap .line-content p {
-  padding-bottom: 3px;
-  color: #919199;
-  font-size: 14px;
-}
-
-.line-wrap .line-content .title {
-  padding-bottom: 4px;
-  color: #16161a;
-  font-size: 24px;
-  font-weight: 600;
-}
-
-.line-wrap .line-content .circle {
-  padding-top: 4px;
-}
-
-.line-wrap .line-content .circle p {
-  width: 16px;
-  height: 16px;
-  background-color: #48ce55;
-  border-radius: 50%;
-  display: inline-block;
-}
-
-.line-wrap .line-content .circle p:last-child {
-  background-color: #000;
-  margin-left: 4px;
-}
 
 .product-carousel-wrap {
   width: 1200px;
@@ -191,7 +142,7 @@ const onSlideChange = (s) => {
 
 .product-carousel-wrap .swiper-button-next, .product-carousel-wrap .swiper-button-prev {
   position: unset;
-  margin: 0 54px 212px;
+  margin: 0 54px;
   height: auto;
   outline: 0;
   color: #45454d;
@@ -207,15 +158,7 @@ const onSlideChange = (s) => {
   width: 100%;
 }
 
-/*.swiper-my-pagination的子元素 */
 
-
-.swiper-my-pagination > pagination {
-  margin: 0 12px !important;
-  background: none;
-  font-weight: 600;
-  color: #000;
-}
 
 
 </style>

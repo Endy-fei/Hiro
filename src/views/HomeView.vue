@@ -2,11 +2,15 @@
   <div class="home lazy-animate-init">
     <MainSwiper/>
     <ProductSwiper/>
+    <ServiceSwiper/>
+    <FeaturedProducts/>
   </div>
 </template>
 <script setup>
 import MainSwiper from '@/views/home_components/MainSwiper.vue'
 import ProductSwiper from "@/views/home_components/ProductSwiper.vue";
+import ServiceSwiper from "@/views/home_components/ServiceSwiper.vue";
+import FeaturedProducts from "@/views/home_components/FeaturedProducts.vue";
 </script>
 <style scoped>
 .home {
