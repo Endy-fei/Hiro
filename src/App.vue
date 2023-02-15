@@ -60,7 +60,7 @@ import HiroLogo from './components/HiroLogo.vue'
     <div class="footer_content">
       <div class="company_info">
         <div class="company_logo">
-          <img src="@/assets/images/9/9-1.png" alt="logo">
+          <img src="@/assets/images/9/9-1.jpg" alt="logo">
         </div>
         <div class="company_content">
           <div class="content">
@@ -143,15 +143,16 @@ import HiroLogo from './components/HiroLogo.vue'
           </div>
         </div>
         <div class="company_code">
-          <img src="@/assets/images/9/9-2.png" alt="code">
+          <img src="@/assets/images/9/9-1.jpg" alt="code">
           <p>扫码了解</p>
         </div>
       </div>
     </div>
     <div class="footer_bottom">
       <p>浙公网安备 33011802000662</p>
-      <p><a data-v-87f2f512="" href="https://beian.miit.gov.cn/" target="_blank"
-            class="jump-page">浙ICP备11062584号-3</a></p>
+      <p>
+        <a href="https://beian.miit.gov.cn/" target="_blank" class="jump-page">浙ICP备11062584号-3</a>
+      </p>
     </div>
   </footer>
 </template>

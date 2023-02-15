@@ -1,7 +1,7 @@
 <template>
   <div class="logo_box">
     <div class="logo_img">
-      <img src="@/assets/images/9/9-1.png" alt="logo">
+      <img src="@/assets/images/9/9-1.jpg" alt="logo">
     </div>
     <p>Mr.Hiro</p>
   </div>
