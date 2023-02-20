@@ -20,11 +20,37 @@
       </div>
       <div class="brand-activities-info">
         <div class="brand-activities-img">
-          <img src="img/verawang.81669464.jpg" alt="">
+          <img src="@/assets/images/14/14-1.png" alt="">
+        </div>
+        <div class="brand-activities-intro intro-left">
+          <p>Mr.Hiro 录音棚x 声音留声机计划</p>
+          <span>
+            成为成人时我们总是遗憾，儿时的声音已经流逝，那种稚嫩的声音对每个人都有无限的意义，如果我们记录下孩子的声音，当他们都长大时，听到自己儿时的声音会回忆吗，留下儿时的声音，就像木头的纹理，一圈一圈，那是生命的刻痕。
+          </span>
         </div>
       </div>
-      <div class=""></div>
-      <div class=""></div>
+      <div class="brand-activities-info">
+        <div class="brand-activities-img">
+          <img src="@/assets/images/15/15-1.png" alt="">
+        </div>
+        <div class="brand-activities-intro">
+          <p>星球音乐节</p>
+          <span>
+            Mr.Hiro连续三年推出，根源星球音乐节，分别在青岛五四广场、潍坊市府广场、中国风筝基地提供艺人、设备、乐器全套服务。
+          </span>
+        </div>
+      </div>
+      <div class="brand-activities-info">
+        <div class="brand-activities-img">
+          <img src="@/assets/images/16/16-1.png" alt="">
+        </div>
+        <div class="brand-activities-intro intro-left">
+          <p>汽车影音展</p>
+          <span>
+            Mr.Hiro连续三年入驻日本大阪市汽车套件、汽车影音套件JDM展，以匠心，Mr.Hiro CAR RENTAL为主题，通过【速度】【写实】【动听】三个板块带给每一位车主视听感官上前所未有的感悟。
+          </span>
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -60,11 +86,12 @@
 }
 
 .brand-line-wrap .brand-content .content-set .img-content {
-  width: 463px;
-  margin-right: 113px;
+
   display: inline-block;
-  text-align: left;
   vertical-align: top;
+  width: 100%;
+  text-align: center;
+  margin: 0px;
 }
 
 .brand-line-wrap .brand-content .content-set .img-content .title {
@@ -124,5 +151,36 @@
   right: 14px;
   bottom: 14px;
   width: 100%;
+}
+
+.brand-activities-wrap .brand-activities-content .brand-activities-info .brand-activities-intro {
+  display: inline-block;
+  width: 480px;
+  padding: 38px 0;
+  margin-left: 130px;
+  vertical-align: top;
+}
+
+.brand-activities-wrap .brand-activities-content .brand-activities-info .intro-left {
+  float: left;
+  margin-left: 0;
+  margin-right: 130px;
+}
+
+.brand-activities-wrap .brand-activities-content .brand-activities-info .brand-activities-intro p {
+  color: #45454d;
+  font-size: 36px;
+  font-weight: 600;
+  padding-bottom: 10px;
+  text-align: left;
+}
+
+.brand-activities-wrap .brand-activities-content .brand-activities-info .brand-activities-intro span {
+  display: block;
+  color: #45454d;
+  padding-top: 20px;
+  font-size: 16px;
+  line-height: 40px;
+  text-align: left;
 }
 </style>

@@ -1,19 +1,19 @@
 <template>
   <div class="brand-intro-wrap">
     <IntroHead/>
-    <div class="anchor">
-      <div class="anchor-wrap">
-        <div class="add-margin">
-          <div class="anchor-content">
-            <div class="nav-list" v-for="(nav,index) in navList" :key="index" :class="{active:activeIndex===index}"
-                 @click="changeIndex(index)">
-              <img :src="activeIndex===index?nav.imgActive:nav.img" alt="">
-              <p>{{ nav.text }}</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+    <!--    <div class="anchor">-->
+    <!--      <div class="anchor-wrap">-->
+    <!--        <div class="add-margin">-->
+    <!--          <div class="anchor-content">-->
+    <!--            <div class="nav-list" v-for="(nav,index) in navList" :key="index" :class="{active:activeIndex===index}"-->
+    <!--                 @click="changeIndex(index)">-->
+    <!--              <img :src="activeIndex===index?nav.imgActive:nav.img" alt="">-->
+    <!--              <p>{{ nav.text }}</p>-->
+    <!--            </div>-->
+    <!--          </div>-->
+    <!--        </div>-->
+    <!--      </div>-->
+    <!--    </div>-->
     <div class="brand-line-wrap">
       <div class="brand-content">
         <div class="content-set">
@@ -75,13 +75,14 @@
       </div>
     </div>
     <brand-active></brand-active>
-    <div></div>
+    <development></development>
   </div>
 </template>
 
 <script setup>
 import IntroHead from "@/views/brand_components/IntroHead.vue";
 import BrandActive from "@/views/brand_components/BrandActive.vue";
+import Development from "@/views/brand_components/Development.vue";
 import {p1, p2, p3, p4, p5, p1Active, p2Active, p3Active, p4Active, p5Active} from "@/assets/images/utils/anchor";
 import {ref} from "vue";
 
@@ -129,6 +130,9 @@ const changeIndex = (index) => {
 
 .anchor {
   min-height: 88px;
+  position: sticky;
+  top: 0;
+  z-index: 9;
 }
 
 .anchor .anchor-wrap {
