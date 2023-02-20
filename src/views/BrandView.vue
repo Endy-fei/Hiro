@@ -74,27 +74,14 @@
         </div>
       </div>
     </div>
-    <div class="brand-activities-wrap">
-      <div class="brand-activities-content">
-        <div class="brand-activities-title">
-          <div class="brand-line-wrap">
-            <div class="brand-content">
-              
-            </div>
-          </div>
-        </div>
-        <div class=""></div>
-        <div class=""></div>
-        <div class=""></div>
-      </div>
-
-    </div>
+    <brand-active></brand-active>
     <div></div>
   </div>
 </template>
 
 <script setup>
 import IntroHead from "@/views/brand_components/IntroHead.vue";
+import BrandActive from "@/views/brand_components/BrandActive.vue";
 import {p1, p2, p3, p4, p5, p1Active, p2Active, p3Active, p4Active, p5Active} from "@/assets/images/utils/anchor";
 import {ref} from "vue";
 
@@ -284,15 +271,5 @@ const changeIndex = (index) => {
   margin-left: 113px;
 }
 
-.brand-activities-wrap {
-  background-color: #fafafa;
-  padding-bottom: 120px;
-  text-align: center;
-}
 
-.brand-activities-wrap .brand-activities-content {
-  width: 1152px;
-  padding-top: 100px;
-  margin: 0 auto;
-}
 </style>
