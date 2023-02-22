@@ -2,58 +2,58 @@
   <div class="store-list">
     <div class="store-item">
       <div class="item-left">
-        <p class="name gold-name"> 北京东方新天地大师店 </p>
+        <p class="name gold-name"> 日本大阪Mr.Hiro Car RENTAL </p>
         <img src="@/assets/images/utils/store-icon.png" class="logo">
         <p class="address">
           门店地址:
           <span class="address-detail">
-            北京市东城区长安街1号东方新天地  负一层BB57A号（地铁1号线王府井站A口、进商场负一层 第四街区）
+            日本，大版市大正区泉尾4-12-21
           </span>
         </p>
         <p class="phone">
           门店客服：
-          <span>010-85186556</span>
+          <span>06-6710-9972</span>
         </p>
         <p class="time">
           营业时间：
           <span>
-            暂无信息
+            10:00:00 - 22:00:00
           </span>
         </p>
         <p class="show-btn gold-map">
-          查看地图导航&gt;
+<!--          查看地图导航&gt;-->
         </p>
       </div>
       <div class="item-right">
-        <img src="https://cdn.haimati.cn/himo/0d7f999e3030863619886b1e178e6e31.jpg">
+        <img src="@/assets/images/18/18-1.png">
       </div>
     </div>
     <div class="store-item">
       <div class="item-left">
-        <p class="name gold-name"> 北京东方新天地大师店 </p>
+        <p class="name gold-name"> 中国山东 Mr.Hior Music </p>
         <img src="@/assets/images/utils/store-icon.png" class="logo">
         <p class="address">
           门店地址:
           <span class="address-detail">
-            北京市东城区长安街1号东方新天地  负一层BB57A号（地铁1号线王府井站A口、进商场负一层 第四街区）
+<!--            北京市东城区长安街1号东方新天地  负一层BB57A号（地铁1号线王府井站A口、进商场负一层 第四街区）-->
           </span>
         </p>
         <p class="phone">
           门店客服：
-          <span>010-85186556</span>
+          <span>13287656101</span>
         </p>
         <p class="time">
           营业时间：
           <span>
-            暂无信息
+            10:00:00 - 22:00:00
           </span>
         </p>
         <p class="show-btn gold-map">
-          查看地图导航&gt;
+<!--          查看地图导航&gt;-->
         </p>
       </div>
       <div class="item-right">
-        <img src="https://cdn.haimati.cn/himo/0d7f999e3030863619886b1e178e6e31.jpg">
+        <img src="@/assets/images/18/18-2.png">
       </div>
     </div>
   </div>

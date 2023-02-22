@@ -1,9 +1,10 @@
 <template>
   <div class="carousel-wrap">
     <swiper :modules="modules" :slides-per-view="1" :space-between="0" :navigation="false"
-            :autoplay="{delay: 3000,disableOnInteraction: false}" :pagination="false"
+            :autoplay="{delay: 5000,disableOnInteraction: false}" :pagination="false"
             :scrollbar="false"
             :loop="true"
+            :speed="1000"
             @swiper="onSwiper"
             @slideChange="onSlideChange">
       <swiper-slide class="carousel-img" slide-1></swiper-slide>

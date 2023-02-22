@@ -1,8 +1,8 @@
 <template>
   <div class="city-show">
-    <h1>
-      City-Show
-    </h1>
+<!--    <h1>-->
+<!--      City-Show-->
+<!--    </h1>-->
   </div>
 </template>
 

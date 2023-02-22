@@ -148,12 +148,12 @@ import HiroLogo from './components/HiroLogo.vue'
         </div>
       </div>
     </div>
-    <div class="footer_bottom">
-      <p>浙公网安备 33011802000662</p>
-      <p>
-        <a href="https://beian.miit.gov.cn/" target="_blank" class="jump-page">浙ICP备11062584号-3</a>
-      </p>
-    </div>
+<!--    <div class="footer_bottom">-->
+<!--      <p>浙公网安备 33011802000662</p>-->
+<!--      <p>-->
+<!--        <a href="https://beian.miit.gov.cn/" target="_blank" class="jump-page">浙ICP备11062584号-3</a>-->
+<!--      </p>-->
+<!--    </div>-->
   </footer>
 </template>
 

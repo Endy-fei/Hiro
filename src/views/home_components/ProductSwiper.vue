@@ -6,7 +6,7 @@
       <div style="display: flex">
         <div class="swiper-button-prev"></div>
         <swiper :modules="modules" :slides-per-view="1" :space-between="0" :navigation="navigation"
-                :autoplay="autoplay"
+                :autoplay="autoplay" :speed="1000"
                 :pagination="pagination" :scrollbar="false" :loop="true" @swiper="onSwiper"
                 @slideChange="onSlideChange">
           <swiper-slide class="carousel-img" slide-1>
