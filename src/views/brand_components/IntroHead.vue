@@ -1,8 +1,12 @@
 <template>
   <div class="brand-intro-head">
     <!--画两个⚪-->
-    <div class="brand-intro-head__circle"></div>
-    <div class="brand-intro-head__circle"></div>
+<!--    <div class="brand-intro-head__circle"></div>-->
+<!--    <div class="brand-intro-head__circle"></div>-->
+    <!--渐变酒红圆形-->
+<!--    <div class="brand-intro-head__circle"></div>-->
+<!--    <div class="brand-intro-head__circle"></div>-->
+    <!--文字区域-->
     <div class="text-area">
       <p class="title">Mr.Hiro 皓先生</p>
       <div class="circle">
@@ -27,6 +31,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  background-image: url("@/assets/images/utils/title-bg.png");
 }
 
 .brand-intro-head__circle {
@@ -40,21 +45,24 @@
 
 /*
 第一个⚪在左上角
+渐变酒红圆形
 */
-.brand-intro-head__circle:nth-child(1) {
-  transform: translate(-50%, -50%);
-  top: -300px;
-  left: 10px;
-}
+/*.brand-intro-head__circle:nth-child(1) {*/
+/*  transform: translate(-50%, -50%);*/
+/*  top: -300px;*/
+/*  left: 10px;*/
+/*  !*渐变酒红色*!*/
+/*  background: linear-gradient(90deg, #ff0000 0%, #ff0000 50%, #ff0000 100%);*/
+/*}*/
 
-/*
-第二个⚪在右下角
- */
-.brand-intro-head__circle:nth-child(2) {
-  transform: translate(50%, 50%);
-  bottom: -300px;
-  right: 10px;
-}
+/*!**/
+/*第二个⚪在右下角*/
+/* *!*/
+/*.brand-intro-head__circle:nth-child(2) {*/
+/*  transform: translate(50%, 50%);*/
+/*  bottom: -300px;*/
+/*  right: 10px;*/
+/*}*/
 
 
 .circle {

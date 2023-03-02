@@ -130,8 +130,8 @@ const changeImages = (index) => {
 }
 
 .pic-content img {
-  width: 600px;
-  height: 400px;
+  width: 1000px;
+  height: 600px;
   object-fit: contain;
 }
 

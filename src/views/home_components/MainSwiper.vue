@@ -34,9 +34,9 @@
 <script setup>
 import {Swiper, SwiperSlide} from 'swiper/vue';
 import {onMounted, ref} from "vue";
-import p1 from '@/assets/images/1/1-1.png';
-import p2 from '@/assets/images/1/1-2.png';
-import p3 from '@/assets/images/1/1-3.png';
+import p1 from '@/assets/images/1/1-1.jpg';
+import p2 from '@/assets/images/1/1-2.jpg';
+import p3 from '@/assets/images/1/1-3.jpg';
 import {A11y, Autoplay, Navigation, Pagination, Scrollbar} from "swiper";
 import 'swiper/css';
 import 'swiper/css/bundle';

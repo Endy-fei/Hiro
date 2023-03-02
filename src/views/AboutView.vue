@@ -15,11 +15,11 @@
     <div class="company">
       <line-wrap title="公司资质" content=""></line-wrap>
       <div class="company-cards">
-        <img src="@/assets/images/35/35-1.png" alt="">
+<!--        <img src="@/assets/images/35/35-1.png" alt="">-->
         <img src="@/assets/images/35/35-2.png" alt="">
         <img src="@/assets/images/35/35-3.png" alt="">
         <img src="@/assets/images/35/35-4.png" alt="">
-        <img src="@/assets/images/35/35-5.png" alt="">
+<!--        <img src="@/assets/images/35/35-5.png" alt="">-->
         <img src="@/assets/images/35/35-6.png" alt="">
         <img src="@/assets/images/35/35-7.png" alt="">
         <img src="@/assets/images/35/35-8.png" alt="">

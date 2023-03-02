@@ -149,9 +149,9 @@ import HiroLogo from './components/HiroLogo.vue'
       </div>
     </div>
 <!--    <div class="footer_bottom">-->
-<!--      <p>浙公网安备 33011802000662</p>-->
+<!--      <p>888888888888888</p>-->
 <!--      <p>-->
-<!--        <a href="https://beian.miit.gov.cn/" target="_blank" class="jump-page">浙ICP备11062584号-3</a>-->
+<!--        <a href="https://beian.miit.gov.cn/" target="_blank" class="jump-page">88888888888888</a>-->
 <!--      </p>-->
 <!--    </div>-->
   </footer>

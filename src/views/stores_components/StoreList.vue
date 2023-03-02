@@ -2,8 +2,8 @@
   <div class="store-list">
     <div class="store-item">
       <div class="item-left">
-        <p class="name gold-name"> 日本大阪Mr.Hiro Car RENTAL </p>
-        <img src="@/assets/images/utils/store-icon.png" class="logo">
+        <p class="name gold-name"> 日本大阪Mr.Hiro Car STUDIO </p>
+<!--        <img src="@/assets/images/utils/store-icon.png" class="logo">-->
         <p class="address">
           门店地址:
           <span class="address-detail">
@@ -31,7 +31,7 @@
     <div class="store-item">
       <div class="item-left">
         <p class="name gold-name"> 中国山东 Mr.Hior Music </p>
-        <img src="@/assets/images/utils/store-icon.png" class="logo">
+<!--        <img src="@/assets/images/utils/store-icon.png" class="logo">-->
         <p class="address">
           门店地址:
           <span class="address-detail">
