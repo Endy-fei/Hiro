@@ -12,9 +12,14 @@
     src: url("@/assets/font/DingTalk Sans.ttf");
 }
 
+@font-face {
+    font-family: "SanJiLuoLiHei-Cu-2";
+    src: url("@/assets/font/SanJiLuoLiHei-Cu-2.ttf");
+}
+
 /*应用到全局*/
 * {
-    font-family: "DingTalk JinBuTi", "DingTalk Sans", "Microsoft YaHei", "Helvetica Neue",
+    font-family: "SanJiLuoLiHei-Cu-2", "DingTalk Sans", "Microsoft YaHei", "Helvetica Neue",
     Helvetica, Arial, sans-serif;
     box-sizing: border-box;
 }
